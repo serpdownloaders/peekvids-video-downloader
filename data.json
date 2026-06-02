@@ -1,0 +1,217 @@
+{
+  "github_source_repo": "https://github.com/serpcompany/peekvids-downloader",
+  "serply_link": "https://serp.ly/peekvids-downloader",
+  "app_name": "Peekvids Video Downloader",
+  "short_description": "Download & Save Peekvids Videos Easily for Offline Viewing (Browser Extension)",
+  "long_description": "This extension is designed to help you download publicly accessible video clips from Peekvids, focusing on the distinctive /v/{slug}/ URL pattern used throughout the platform. It works by detecting media streams that become available during playback, particularly through the iframe-based player transition common on Peekvids clip pages.",
+  "main_video": "",
+  "featured_image": "",
+  "screenshots": [
+    "https://apps.serp.co/media/optimized-products/peekvids-downloader-fullscreen-01-55b35ec7c6.webp",
+    "https://apps.serp.co/media/optimized-products/peekvids-downloader-fullscreen-02-d72fe4afff.webp",
+    "https://apps.serp.co/media/optimized-products/peekvids-downloader-fullscreen-03-326bcbcda6.webp",
+    "https://apps.serp.co/media/optimized-products/peekvids-downloader-fullscreen-04-40653adebd.webp"
+  ],
+  "chromestore_link": "",
+  "firefoxstore_link": "",
+  "other_links": [],
+  "faqs": [
+    {
+      "question": "Does the extension work on all Peekvids pages?",
+      "answer": "It is designed for the standard /v/{slug}/ clip route where iframe-based playback is used. Other page types may not be supported."
+    },
+    {
+      "question": "Is this extension officially affiliated with Peekvids?",
+      "answer": "No. This is an independent browser extension built to work with the public Peekvids platform. It is not endorsed by or affiliated with Peekvids."
+    },
+    {
+      "question": "Can I download videos in resolutions other than what is listed?",
+      "answer": "The extension captures the streams made available during playback. Available quality options depend on what the Peekvids player exposes through the iframe handoff."
+    },
+    {
+      "question": "What happens to my downloaded files?",
+      "answer": "Files are saved to your browser's default download location. You can move, rename, or organize them as you wish."
+    },
+    {
+      "question": "Will the extension work if Peekvids changes its player?",
+      "answer": "The extension may need updates if Peekvids significantly alters its playback structure. Check the releases page for updates."
+    }
+  ],
+  "permissions": [
+    {
+      "name": "",
+      "description": "Peekvids organizes its content around short voyeur-style clips, each served through a compact /v// URL. The platform uses an iframe-based playback model where the video player lives inside an embedded layer, making direct media access less straightforward than on simpler sites. Most generic downloaders fail to recognize this handoff pattern, leaving you unable to save clips you have permission to keep."
+    },
+    {
+      "name": "",
+      "description": "Archiving clips you have permission to keep for personal reference"
+    },
+    {
+      "name": "",
+      "description": "Only download content you own or have explicit permission to save"
+    }
+  ],
+  "features": [
+    "Built specifically around Peekvids clip page structure and the /v/ route pattern",
+    "Targets iframe-led playback handoff for stream detection",
+    "Supports m3u8 and mp4 stream hints based on observed platform behavior",
+    "Verified target with cautious readiness posture for reliable operation",
+    "Clean MP4 output for easy playback and local archiving",
+    "Detection tailored to Peekvids /v/{slug}/ clip pages",
+    "Support for iframe-based playback handoff common on Peekvids",
+    "Stream discovery for m3u8 and mp4 media formats",
+    "Clean MP4 output for standard media player compatibility",
+    "Popup-based controls for easy download initiation",
+    "Non-intrusive detection that runs only on supported pages",
+    "Lightweight browser extension with minimal performance impact",
+    "Regular updates aligned with Peekvids platform changes"
+  ],
+  "content": {
+    "why": [
+      "Peekvids organizes its content around short voyeur-style clips, each served through a compact /v/{slug}/ URL. The platform uses an iframe-based playback model where the video player lives inside an embedded layer, making direct media access less straightforward than on simpler sites. Most generic downloaders fail to recognize this handoff pattern, leaving you unable to save clips you have permission to keep.",
+      "This extension is built with the Peekvids structure in mind. It understands the /v/ route pattern, watches for the iframe handoff during playback, and attempts to capture the underlying m3u8 or mp4 stream when it becomes available. The approach is deliberate rather than aggressive, giving you a reliable way to download clips without disrupting your browsing experience."
+    ],
+    "how_it_works": [
+      "Install the extension from the latest release.",
+      "Open Peekvids and go to a supported video page.",
+      "Start playback so the extension can detect the media.",
+      "Open the popup or use the on-page controls.",
+      "Choose the quality option you want.",
+      "Start the download and wait for the MP4 export to finish.",
+      "Save the final file locally."
+    ],
+    "tutorial": [
+      "Navigate to the Peekvids clip page you want to save. The URL should follow the /v/{slug}/ pattern.",
+      "Allow the page to load completely, including the embedded iframe player.",
+      "Click play on the video to start playback. This activates the stream detection process.",
+      "Look for the extension icon in your browser toolbar. A badge may appear when media is detected.",
+      "Click the extension icon to open the popup interface.",
+      "Review the detected media sources. The extension will list available stream options.",
+      "Select your preferred quality or stream variant.",
+      "Click the download button and wait for the MP4 file to be prepared and saved."
+    ],
+    "supported_formats": [
+      "Input: m3u8 and mp4 streams detected during iframe-based playback on Peekvids clip pages",
+      "Output: MP4",
+      "Saved files use MP4 so they are easier to replay on standard media players, move between devices, or archive locally."
+    ],
+    "target_users": [
+      "Desktop users who regularly view and want to save Peekvids clips",
+      "Collectors building local archives of publicly accessible Peekvids content",
+      "Users who prefer offline playback of Peekvids clips without streaming",
+      "Developers and testers evaluating Peekvids-specific download workflows"
+    ],
+    "use_cases": [
+      "Saving a Peekvids clip for offline viewing when internet access is limited",
+      "Archiving clips you have permission to keep for personal reference",
+      "Building a local library of Peekvids content organized by your own system",
+      "Testing the iframe handoff and stream detection behavior on Peekvids",
+      "Evaluating the extension as a candidate for Peekvids-specific download needs"
+    ],
+    "troubleshooting": [
+      "No download button appears on the Peekvids page Ensure you are on a supported /v/{slug}/ page and that the video player has started playback. The extension needs to detect the iframe handoff before it can offer download options.",
+      "The extension detects the page but finds no media streams Try refreshing the page and starting playback again. Some clips may have stricter stream exposure timing, and the iframe handoff may require a fresh page load.",
+      "Downloads fail or produce partial files Check your internet connection and ensure the Peekvids page remains open during the download. Interrupted network requests can cause incomplete file transfers.",
+      "The popup shows an error about unsupported content Not all Peekvids pages use the same iframe handoff pattern. The extension works best on standard /v/ clip routes with embedded players.",
+      "The extension icon does not appear after installation Make sure you have installed the correct build for your browser and that the extension is enabled in your browser settings."
+    ],
+    "trial_access": [
+      "Includes 3 free downloads so you can test the workflow first",
+      "Email sign-in uses secure one-time password verification",
+      "No credit card required for the trial",
+      "Unlimited downloads are available with a paid license"
+    ],
+    "installation_instructions": [
+      "Open the latest release page.",
+      "Download the correct build for your browser.",
+      "Install the extension.",
+      "Open a supported Peekvids page.",
+      "Use the popup to detect and download the media."
+    ],
+    "notes": [
+      "Only download content you own or have explicit permission to save",
+      "An internet connection is required for downloads",
+      "Peekvids uses an iframe-led playback handoff that the extension is designed to follow",
+      "The extension is a verified target candidate with cautious readiness posture"
+    ],
+    "about": [
+      "Peekvids is a video platform centered around short voyeur-style clips, each served through a compact /v/{slug}/ URL structure. The platform uses an iframe-based playback model that makes media detection less straightforward, which is why this extension focuses specifically on understanding and working with that handoff pattern."
+    ]
+  },
+  "serpx_link": "https://serpx.link/peekvids-downloader",
+  "github_topics": [
+    "peekvids-download",
+    "peekvids-downloader",
+    "peekvids-video-downloader",
+    "peekvids-video-downloader-online",
+    "peekvids-video-downloader-mac",
+    "peekvids-video-downloader-window",
+    "peekvids-video-downloader-free",
+    "peekvids-video-downloader-extension",
+    "peekvids-video-downloader-app",
+    "peekvids-video-downloader-chrome",
+    "peekvids-video-downloader-from-url",
+    "how-to-download-peekvids-videos",
+    "how-to-download-peekvids-videos-mac",
+    "how-to-download-peekvids-videos-windows",
+    "how-to-download-peekvids-videos-online",
+    "how-to-download-peekvids-videos-free",
+    "how-to-download-from-peekvids",
+    "how-to-download-videos-from-peekvids",
+    "download-peekvids-videos",
+    "peekvids-video-tutorial",
+    "save-peekvids-videos",
+    "peekvids-video-content-saver",
+    "how-to-download-peekvids-videos-for-free"
+  ],
+  "hashtags": [
+    "#PeekvidsDownload",
+    "#PeekvidsDownloader",
+    "#PeekvidsVideoDownloader",
+    "#PeekvidsVideoDownloaderOnline",
+    "#PeekvidsVideoDownloaderMac",
+    "#PeekvidsVideoDownloaderWindow",
+    "#PeekvidsVideoDownloaderFree",
+    "#PeekvidsVideoDownloaderExtension",
+    "#PeekvidsVideoDownloaderApp",
+    "#PeekvidsVideoDownloaderChrome",
+    "#PeekvidsVideoDownloaderFromURL",
+    "#HowToDownloadPeekvidsVideos",
+    "#HowToDownloadPeekvidsVideosMac",
+    "#HowToDownloadPeekvidsVideosWindows",
+    "#HowToDownloadPeekvidsVideosOnline",
+    "#HowToDownloadPeekvidsVideosFree",
+    "#HowToDownloadFromPeekvids",
+    "#HowToDownloadVideosFromPeekvids",
+    "#DownloadPeekvidsVideos",
+    "#PeekvidsVideoTutorial",
+    "#SavePeekvidsVideos",
+    "#PeekvidsVideoContentSaver",
+    "#HowToDownloadPeekvidsVideosForFree"
+  ],
+  "youtube_tags": [
+    "Peekvids Download",
+    "Peekvids Downloader",
+    "Peekvids Video Downloader",
+    "Peekvids Video Downloader Online",
+    "Peekvids Video Downloader Mac",
+    "Peekvids Video Downloader Window",
+    "Peekvids Video Downloader Free",
+    "Peekvids Video Downloader Extension",
+    "Peekvids Video Downloader App",
+    "Peekvids Video Downloader Chrome",
+    "Peekvids Video Downloader From URL",
+    "How To Download Peekvids Videos",
+    "How To Download Peekvids Videos Mac",
+    "How To Download Peekvids Videos Windows",
+    "How To Download Peekvids Videos Online",
+    "How To Download Peekvids Videos Free",
+    "How To Download From Peekvids",
+    "How To Download Videos From Peekvids",
+    "Download Peekvids Videos",
+    "Peekvids Video Tutorial",
+    "Save Peekvids Videos",
+    "Peekvids Video Content Saver",
+    "How To Download Peekvids Videos For Free"
+  ]
+}
